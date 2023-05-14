@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "landing-strips"
+version = "0.1.0"
+description = "An attemt to find illegal landing strips in the Amazon Forest"
+authors = ["Alexandre Strube <surak@surak.eti.br>"]
+readme = "README.md"
+packages = [{include = "landing_strips"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+stackprinter = "^0.2.10"
+
+[tool.poetry.scripts]
+landing_strips = "landing_strips.landing_strips:main"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.1"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
