@@ -10,6 +10,7 @@ packages = [{include = "landing-strips"}]
 python = "^3.10"
 stackprinter = "^0.2.10"
 python-dotenv = "^1.0.0"
+requests = "^2.30.0"
 
 [tool.poetry.scripts]
 landing-strips = "landing-strips.landing-strips:main"
